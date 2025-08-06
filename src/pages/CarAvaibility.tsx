@@ -1,5 +1,3 @@
-import React from "react";
-
 const availableDates = ["2025-08-10", "2025-08-12", "2025-08-15", "2025-08-21"];
 
 const CarAvailabilityCalendar = () => {
