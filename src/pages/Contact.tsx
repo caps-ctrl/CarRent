@@ -1,4 +1,3 @@
-import React from "react";
 import LokingForUs from "./LokingForUs";
 import SendMessage from "./SendMessage";
 
