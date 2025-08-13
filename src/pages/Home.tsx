@@ -17,7 +17,6 @@ const Home = () => {
       >
         <div className="p-10">
           <h1 className="text-4xl font-bold">Wypożyczalnia aut</h1>
-          <p className="p-4 "> Znajdź idealny samochód na swoją podróż.</p>
         </div>
         <NavLink to={"/calendar"}>
           {" "}

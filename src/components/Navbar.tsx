@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { motion, easeInOut } from "framer-motion";
-import Menu from "./Menu";
 
 const Navbar: React.FC = () => {
   const [showSettings, setShowSettings] = useState(false);
@@ -83,7 +82,47 @@ const Navbar: React.FC = () => {
             borderBottomRightRadius: "8px",
           }}
         >
-          <Menu />
+          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            <li>
+              <button
+                onClick={() => setShowSettings(false)}
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "#fff",
+                  cursor: "pointer",
+                }}
+              >
+                <NavLink to={"/faq"}> FAQ</NavLink>
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => setShowSettings(false)}
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "#fff",
+                  cursor: "pointer",
+                }}
+              >
+                <NavLink to={"/clientsreview"}> Clients reviews</NavLink>
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => setShowSettings(false)}
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "#fff",
+                  cursor: "pointer",
+                }}
+              >
+                <NavLink to={"/contact"}> Contact</NavLink>
+              </button>
+            </li>
+          </ul>
         </motion.div>
       }
 
